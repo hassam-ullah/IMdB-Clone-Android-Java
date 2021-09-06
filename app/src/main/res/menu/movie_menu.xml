@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_review_option"
+        android:title="Add Review">
+    </item>
+    <item
+        android:id="@+id/add_to_list_option"
+        android:title="Add to Watchlist">
+    </item>
+</menu>

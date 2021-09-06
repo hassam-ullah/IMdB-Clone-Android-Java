@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    tools:context=".Fragment_Settings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/user_freg_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="15dp"
+            android:text="USER"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/user_frag_watch_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_freg_title"
+            android:paddingVertical="17dp"
+            android:paddingHorizontal="20dp"
+            android:text="Watch Preferences"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="17sp"
+            android:background="@drawable/user_fragment_item_background"/>
+
+        <TextView
+            android:id="@+id/user_frag_favourites_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_frag_watch_textView"
+            android:background="@drawable/user_fragment_item_background"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="17dp"
+            android:text="Hisotry"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/user_freg_general_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_frag_favourites_textView"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="15dp"
+            android:text="GENERAL"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/user_frag_display_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_freg_general_title"
+            android:background="@drawable/user_fragment_item_background"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="17dp"
+            android:text="Display"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/user_frag_storage_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_frag_display_textView"
+            android:paddingVertical="17dp"
+            android:paddingHorizontal="20dp"
+            android:text="Storage"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="17sp"
+            android:background="@drawable/user_fragment_item_background"/>
+
+        <TextView
+            android:id="@+id/user_frag_about_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_frag_storage_textView"
+            android:background="@drawable/user_fragment_item_background"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="17dp"
+            android:text="About"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/signOut_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_frag_about_textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/round_corner_button_yellow"
+            android:backgroundTint="@color/imdb_gold"
+            android:text="SIGN OUT"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/delete_account_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signOut_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corner_button_red"
+            android:backgroundTint="@color/delete_red"
+            android:text="DELETE MY ACCOUNT"
+            tools:ignore="TextContrastCheck" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

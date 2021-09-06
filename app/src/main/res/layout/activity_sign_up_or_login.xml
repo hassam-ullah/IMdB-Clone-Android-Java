@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Activity_SignUp_or_Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="191dp"
+        android:layout_height="127dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/imdblogo"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome to IMDb"
+        android:textColor="@color/white"
+        android:textSize="27sp" />
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/signIn_button"
+        android:text="Already have an account?"
+        android:textColor="#deb522"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/signIn_button"
+        android:layout_width="259dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="15dp"
+        android:text="SIGN IN"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:backgroundTint="@color/white" />
+
+    <Button
+        android:id="@+id/create_account_btn"
+        android:layout_width="259dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/signIn_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="CREATE AN ACCOUNT"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:backgroundTint="@color/imdb_gold" />
+</RelativeLayout>

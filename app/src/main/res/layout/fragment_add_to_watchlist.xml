@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    tools:context=".Fragment_AddToWatchlist">
+
+    <include
+        android:id="@+id/atw_toolbar"
+        layout="@layout/layout_common_navber" />
+
+    <RelativeLayout
+        android:id="@+id/atw_rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atw_toolbar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/atw_watchlist_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/atw_rel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atw_rel_top"
+        android:layout_marginBottom="20dp"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/atw_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/round_corner_button_yellow"
+            android:layout_marginTop="30dp"
+            android:text="DONE"
+            android:textColor="@color/dark_gray" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

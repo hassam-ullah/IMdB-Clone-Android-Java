@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="15dp"
+    android:background="@color/dark_gray"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/actor_award"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Award"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/actor_award_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/actor_award"
+        android:text="Year"
+        android:textColor="@color/white"
+
+        android:textSize="12sp" />
+</RelativeLayout>
